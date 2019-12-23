@@ -20,7 +20,7 @@
       "outputPath": "/Users/lucianofernandez/Documents/Tests_C#/ListaDeCompras/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/lucianofernandez/.nuget/NuGet/NuGet.Config"
+        "/Users/lucianofernandez/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
