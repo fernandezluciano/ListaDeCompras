@@ -33,7 +33,7 @@ namespace ListaDeCompras
 
                     case 1:
                         Console.Clear();
-                        Console.WriteLine("----------Agregar elemento----------");
+                        Console.WriteLine("----------Agregar elementos----------");
                         Console.WriteLine();
                         Console.WriteLine("Ingrese el elemento que quiere agregar:");
                         string elementoAgregar = Console.ReadLine();
@@ -54,16 +54,17 @@ namespace ListaDeCompras
                         Console.Clear();
                         if (listaDeCompras.Count <= 0)
                         {
-                            Console.WriteLine("La lista está vacía. No hay elementos para eliminar. Presione la tecla enter para continuar.");
+                            Console.WriteLine("La lista está vacía. No hay elementos para eliminar." + Environment.NewLine + "Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         else
                         {
+                            Console.WriteLine("----------Eliminar elementos----------");
+                            Console.WriteLine();
                             foreach (var elemento in listaDeCompras)
                             {
                                 Console.WriteLine($"{listaDeCompras.IndexOf(elemento) + 1}: {elemento}");
                             }
-                            Console.WriteLine("----------Eliminar elemento----------");
                             Console.WriteLine();
                             Console.WriteLine("Ingrese el número del elemento que quiere eliminar:");
                             int elementoEliminar = Convert.ToInt32(Console.ReadLine());
@@ -95,6 +96,7 @@ namespace ListaDeCompras
                         break;
 
                     case 4:
+                        Console.Clear();
                         if(listaDeCompras.Count <= 0)
                         {
                             Console.WriteLine("La lista está vacía! Presione la tecla enter para continuar.");
