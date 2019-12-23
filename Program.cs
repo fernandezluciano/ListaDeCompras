@@ -13,7 +13,9 @@ namespace ListaDeCompras
             while(opcion != 5){
                 Console.Clear();
 
-                Console.WriteLine("Lista de compras. --------- Desarrollado por Luciano Fernández © 2019");
+                Console.WriteLine("\t\t\tLISTA DE COMPRAS");
+                Console.WriteLine(" --------- Desarrollado por Luciano Fernández © 2019 ---------");
+                Console.WriteLine();
                 Console.WriteLine("Menú:");
                 Console.WriteLine("1: Agregar elemento");
                 Console.WriteLine("2: Eliminar elemento");
