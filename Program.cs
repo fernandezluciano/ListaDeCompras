@@ -13,14 +13,14 @@ namespace ListaDeCompras
             while(opcion != 5){
                 Console.Clear();
 
-                Console.WriteLine("Lista de compras");
-                Console.WriteLine("Menu:");
+                Console.WriteLine("Lista de compras. --------- Desarrollado por Luciano Fernández © 2019");
+                Console.WriteLine("Menú:");
                 Console.WriteLine("1: Agregar elemento");
                 Console.WriteLine("2: Eliminar elemento");
                 Console.WriteLine("3: Ver lista completa");
                 Console.WriteLine("4: Vaciar la lista");
                 Console.WriteLine("5: Salir");
-                Console.WriteLine("Ingrese la opcion de la operacion que desea realizar:");
+                Console.WriteLine("Ingrese la opción de la operación que desea realizar:");
 
                 opcion = Convert.ToInt32(Console.ReadLine());
 
@@ -43,18 +43,16 @@ namespace ListaDeCompras
                         else
                         {
                             listaDeCompras.Add(elementoAgregar);
-                            Console.WriteLine($"Se agrego {elementoAgregar} a la lista! Presione la tecla enter para continuar.");
+                            Console.WriteLine($"Se agregó {elementoAgregar} a la lista! Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         break;
 
                     case 2:
                         Console.Clear();
-                        Console.WriteLine("----------Eliminar elemento----------");
-                        Console.WriteLine();
                         if (listaDeCompras.Count <= 0)
                         {
-                            Console.WriteLine("La lista esta vacia. No hay elemento para eliminar. Presione la tecla enter para continuar.");
+                            Console.WriteLine("La lista está vacía. No hay elementos para eliminar. Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         else
@@ -63,10 +61,12 @@ namespace ListaDeCompras
                             {
                                 Console.WriteLine($"{listaDeCompras.IndexOf(elemento) + 1}: {elemento}");
                             }
-                            Console.WriteLine("Ingrese el numero del elemento que quiere eliminar:");
+                            Console.WriteLine("----------Eliminar elemento----------");
+                            Console.WriteLine();
+                            Console.WriteLine("Ingrese el número del elemento que quiere eliminar:");
                             int elementoEliminar = Convert.ToInt32(Console.ReadLine());
                             listaDeCompras.Remove(listaDeCompras[elementoEliminar - 1]);
-                            Console.WriteLine("Se elimino el elemento de la lista! Presione la tecla enter para continuar.");
+                            Console.WriteLine("Se eliminó el elemento de la lista! Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         break;
@@ -75,7 +75,7 @@ namespace ListaDeCompras
                         Console.Clear();
                         if (listaDeCompras.Count <= 0)
                         {
-                            Console.WriteLine("La lista esta vacia! Presione la tecla enter para continuar.");
+                            Console.WriteLine("La lista está vacía! Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         else
@@ -95,7 +95,7 @@ namespace ListaDeCompras
                     case 4:
                         if(listaDeCompras.Count <= 0)
                         {
-                            Console.WriteLine("La lista esta vacia! Presione la tecla enter para continuar.");
+                            Console.WriteLine("La lista está vacía! Presione la tecla enter para continuar.");
                             Console.ReadKey();
                         }
                         else
